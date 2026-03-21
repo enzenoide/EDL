@@ -88,7 +88,7 @@ public class PilhaColorida {
     }
 
     public boolean pop_preta(){
-        if(isEmpty())
+        if(topoPilhaPreta == capacity)
             return false;
         this.topoPilhaPreta++;
         this.size_--;
@@ -98,7 +98,7 @@ public class PilhaColorida {
         return true;
     }
     public boolean pop_vermelha(){
-        if(isEmpty())
+        if(topoPilhaVermelha == -1)
             return false;
         this.topoPilhaVermelha--;
         this.size_--;
