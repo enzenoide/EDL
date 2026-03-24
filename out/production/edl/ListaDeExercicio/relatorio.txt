@@ -1,0 +1,51 @@
+5
+5 3
+5
+5 2
+5 2 8
+5 2
+5
+5 9
+5 9 1
+5 9
+5 9 7
+5 9 7 6
+5 9 7
+5 9
+5 9 4
+5 9
+5
+
+
+////
+FC = 10
+10 - 2 milisegundos
+100 - 3 milisegundos
+1000 - 3 milisegundos
+10000 - 29 milisegundos
+100000 - 1 segundo
+1000000 - 10 minutos
+--------------------------
+FC = 100
+10 - 1 milisegundos
+100 - 1 milisegundos
+1000 - 2 milisegundos
+10000 - 7 milisegundos
+100000 - 125 milisegundos
+1000000 - 15 segundos
+---------------------------
+FC = 1000
+10 - 1 milisegundos
+100 - 2 milisegundos
+1000 - 2 milisegundos
+10000 - 3 milisegundos
+100000 - 35 milisegundos
+1000000 - 1 segundo
+--------------------------
+DUPLICACAO
+10 - 2 milisegundos
+100 - 2 milisegundos
+1000 - 2 milisegundos
+10000 - 3 milisegundos
+100000 - 12 milisegundos
+1000000 - 1 segundo
