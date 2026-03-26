@@ -70,41 +70,39 @@ public class PilhaColorida {
     public boolean isFull(){
         return topoPilhaVermelha + 1 == topoPilhaPreta;
     }
-    public boolean push_preta(int value){
+    public void push_preta(int value){
         if(isFull()){
             increase_capacity();
         }
         data[--topoPilhaPreta] = value;
         this.size_++;
-        return true;
     }
-    public boolean push_vermelha(int value){
+    public void push_vermelha(int value){
         if(isFull()){
             increase_capacity();
         }
         data[++topoPilhaVermelha] = value;
         this.size_++;
-        return true;
     }
 
-    public boolean pop_preta(){
+    public Object pop_preta() throws PilhaException{
         if(topoPilhaPreta == capacity)
-            return false;
-        this.topoPilhaPreta++;
+            throw new PilhaException("A pilha está vazia");
+        Object r = data[this.topoPilhaPreta++];
         this.size_--;
         if(this.size_ < this.capacity / 3){
             reduct();
         }
-        return true;
+        return r;
     }
-    public boolean pop_vermelha(){
+    public Object pop_vermelha() throws PilhaException{
         if(topoPilhaVermelha == -1)
-            return false;
-        this.topoPilhaVermelha--;
+            throw new PilhaException("A pilha está vazia");
+        Object r = data[this.topoPilhaVermelha--];
         this.size_--;
         if(this.size_ < this.capacity / 3){
             reduct();
         }
-        return true;
+        return r;
     }
 }
