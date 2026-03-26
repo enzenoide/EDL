@@ -7,7 +7,7 @@ public class testePilha {
 		Integer[] b = new Integer[1];		
 		PilhaArray pp=new PilhaArray(1,0);
 		System.out.println("inserindo");
-		for(int f=0;f<1000000;f++){
+		for(int f=0;f<1000000;f++){ // so inserir as variações da quantidade de elementos no for
 		  pp.push(f);
 		}
 		long fim = System.currentTimeMillis();
