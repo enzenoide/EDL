@@ -33,7 +33,18 @@ public class PilhaArray{
     public boolean isEmpty(){
         return t==-1;
     }
-
+    public void empty(){
+        this.t = -1;
+    }
+    public void adicionarPilha(PilhaArray pilha){
+        PilhaArray aux = new PilhaArray(10,0);
+        while(!pilha.isEmpty()){
+            aux.push(pilha.pop());
+        }
+        while(!aux.isEmpty()){
+            this.push(aux.pop());
+        }
+    }
     public int size(){
         return t+1;
     }
