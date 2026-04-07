@@ -12,6 +12,9 @@ public class PilhaArray{
             FC = 0;
         a = new Object[capacidade];
     }
+    public int getTop(){
+        return this.t;
+    }
     public void push(Object o) {
         if(t>=capacidade-1){
             if(FC==0)
