@@ -1,11 +1,11 @@
-package HeapFilaPrioridade;
 
-public class FilaPrioridade {
+
+public class FilaPri {
 
     private No raiz;
     private int tamanho;
 
-    public FilaPrioridade() {
+    public FilaPri() {
         this.raiz = null;
         this.tamanho = 0;
     }
@@ -139,13 +139,13 @@ public class FilaPrioridade {
 
     private int compare(Item a, Item b) {
         if (a == null || b == null)
-            throw new IllegalArgumentException("Itens nulos não são permitidos.");
+            throw new IllegalArgumentException("Itens não podem ser nulos");
 
         Object chaveA = a.key();
         Object chaveB = b.key();
 
         if (chaveA == null || chaveB == null)
-            throw new IllegalArgumentException("Chaves nulas não são permitidas.");
+            throw new IllegalArgumentException("Chaves não podem ser nulas.");
 
         if (!(chaveA instanceof Comparable) || !(chaveB instanceof Comparable))
             throw new IllegalArgumentException("Chaves devem implementar Comparable.");
