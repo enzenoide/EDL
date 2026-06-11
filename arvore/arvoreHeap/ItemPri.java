@@ -1,10 +1,10 @@
-package HeapFilaPrioridade;
 
-public class ItemPrioridade extends Item {
+
+public class ItemPri extends Item {
     private final Comparable chave;
     private final Object valor;
 
-    public ItemPrioridade(Comparable chave, Object valor) {
+    public ItemPri(Comparable chave, Object valor) {
         if (chave == null)
             throw new IllegalArgumentException("Chave não pode ser nula.");
 
